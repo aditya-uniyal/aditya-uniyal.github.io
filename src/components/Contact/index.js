@@ -19,10 +19,10 @@ const Contact = () => {
     e.preventDefault()
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        'service_eg1gryj',
+        'template_nkm1l9d',
         refForm.current,
-        process.env.REACT_APP_EPUBLIC_KEY
+        'Jm-7JuKRgGTrT4ICw'
       )
       .then(
         () => {
