@@ -5,13 +5,10 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 
-const applicationBasename =
-  process.env.PUBLIC_URL + (process.env.PUBLIC_URL.endsWith('/') ? '' : '/')
-
 function App() {
   return (
     <>
-      <BrowserRouter basename={applicationBasename}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

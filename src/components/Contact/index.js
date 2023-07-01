@@ -3,10 +3,12 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { useNavigate } from 'react-router-dom'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const refForm = useRef()
+  const navigate = useNavigate()
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,7 +29,8 @@ const Contact = () => {
       .then(
         () => {
           alert('Message successfully sent!')
-          window.location.reload(false)
+          refForm.current.reset()
+          navigate('/contact')
         },
         () => {
           alert('Failed to send the message, please try again!')
