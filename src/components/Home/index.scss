@@ -96,6 +96,12 @@
             padding: 15px;
             box-sizing: border-box;
         }
+
+        h1 {
+            &::after {
+                margin-left: 10px;
+            }
+        }
     }
 
     .flat-button {
