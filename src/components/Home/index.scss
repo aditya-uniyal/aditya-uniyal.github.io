@@ -4,7 +4,7 @@
         left: 10%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        width: 45%;
         max-height: 90%;
     }
 
@@ -79,5 +79,29 @@
             background: #ffd700;
             color: #333;
         }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .tags {
+        display: none;
+    }
+
+    .home-page {
+         .text-zone {
+            position: initial;
+            width: 100%;
+            transform: none;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+    }
+
+    .flat-button {
+        float: none;
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 125px;
     }
 }
