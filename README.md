@@ -1,1 +1,1 @@
-# This is my personal portfolio create using ReactJS.
+# This is my personal portfolio created using ReactJS.
